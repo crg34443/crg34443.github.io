@@ -1,3 +1,4 @@
+
 body {
   background-color: powderblue;
   background-image: url(Images/ChewieFeild.-2_Done_Watermark_2000p.jpg); /* Replace with your image path */
@@ -5,7 +6,7 @@ body {
     background-repeat: no-repeat; /* Optional: Prevents image repetition */
     background-position:  center top; /* Optional: Centers the image */
 }
-h1 {
+h1 { 
   color: rgb(0, 0, 0);
   font-size: 75pt;
   text-align: center;
