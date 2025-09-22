@@ -31,6 +31,26 @@ body {
   align-items: center;
 }
 
+.island {
+  
+  color: #fff;
+  background-color: #FF9777;
+  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  max-width: fit-content;
+  margin: 40px auto;
+  padding: 40px 20px;
+}
+
+.island-content {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 30px;
+}
+
+
+
 .site-title {
   font-size: 1.8rem;
 }
