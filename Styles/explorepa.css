@@ -44,9 +44,15 @@ body {
 
 .island-content {
   display: flex; 
-  justify-content: space-between; 
+  justify-content: flex-start; 
   align-items: center; 
   gap: 30px;
+}
+
+.island-image {
+   border-radius: 8px;
+   height: 400px;
+    width: 700px;
 }
 
 
