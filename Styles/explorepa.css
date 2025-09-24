@@ -68,6 +68,10 @@ body {
   font-size: 1.8rem;
 }
 
+.island-title {
+  font-size: 5rem;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
