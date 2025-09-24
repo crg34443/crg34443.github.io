@@ -14,9 +14,16 @@ body {
   line-height: 1.5;
 }
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* BANNER  */
 .banner {
-  background-color: #FF9777;
+  background-color: #AE634C;
+  border-bottom: 4px solid #FF9777;
   color: #fff;
   padding: 20px 0;
 }
@@ -34,8 +41,8 @@ body {
 .island {
   
   color: #fff;
-  background-color: #FF9777;
-  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+  background-color: #ff9777a6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   max-width: fit-content;
   margin: 40px auto;
@@ -81,13 +88,19 @@ body {
 
 .section-title {
   text-align: center;
+  border-bottom: 5px solid #ff9777a6;
+  padding-bottom: 5px;
   margin-bottom: 40px;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .gallery {
+  background-color: #FFF0EC;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   display: flex;
+  border-radius: 12px;
+  padding: 12px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
@@ -128,7 +141,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background-color: #222;
+  background-color: #AE634C;
   color: #fff;
   text-align: center;
   padding: 20px;
