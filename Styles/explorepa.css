@@ -44,12 +44,12 @@ body {
 
 .island-content {
   display: flex; 
-  justify-content: flex-start; 
+  justify-content: space-between; 
   align-items: center; 
   gap: 30px;
 }
 
-.island-image {
+.island-content img {
    border-radius: 8px;
    height: 400px;
     width: 700px;
