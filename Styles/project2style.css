@@ -1,22 +1,33 @@
   
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
   .card {
   background-color: rgba(255, 255, 255, 0.9);
   width: 260px;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+   box-sizing: border-box;
 }
 
   .container {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 40px 20px;
+  box-sizing: border-box;
 }
 
   .container h1{
     display: flex;
     justify-content: center;
     background-color: indianred;
+    padding: 10px 0;
+    border-radius: 6px;
 
   }
 
@@ -39,35 +50,25 @@
   
   /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 900px) {
-  .gallery {
-
-    gap: 25px;
-  }
-
   .card {
     width: 45%;
   }
-
-  .banner-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
 }
 
+
 @media (max-width: 600px) {
+  /* Cards stack vertically and stay centered */
+  .gallery {
+    justify-content: center;
+  }
+
   .card {
     width: 100%;
+    max-width: 320px; /* prevents cards from being too wide */
   }
 
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .nav a {
-    margin: 0;
+  /* Banner turns blue at minimum */
+  .container h1 {
+    background-color: steelblue;
   }
 }
