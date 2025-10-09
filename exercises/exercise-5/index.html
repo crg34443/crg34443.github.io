@@ -8,19 +8,47 @@
 
 </head>
 <body>
-     <div class="container">
-          <H1> Exercise 2 </H1>
-         <div class="gallery">
-         <div class="card">
-          <h3>Random picture</h3>
-          <img src="https://picsum.photos/200/300" alt="idk" />
-         </div>
+  <div class="container">
+    <!-- w3 example --> 
+    <div class="topnav" id="myTopnav">
+      <a href="" class="brand">MySite</a>
+      <a href="">Home</a>
+      <a href="">Gallery</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
 
-        <div class="card">
-          <h3>Random picture</h3>
-          <img src="https://picsum.photos/200/300" alt="idk" />
-        </div>
-        </div>
+      <!-- W3-style icon (hamburger) - JS toggles .responsive class -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()" aria-label="Toggle navigation">
+        &#9776;
+      </a>
     </div>
+
+    <h1> Exercise 2 </h1>
+
+    <div class="gallery">
+      <div class="card">
+        <h3>Random picture</h3>
+        <img src="https://picsum.photos/200/300" alt="idk" />
+      </div>
+
+      <div class="card">
+        <h3>Random picture</h3>
+        <img src="https://picsum.photos/200/300" alt="idk" />
+      </div>
+    </div>
+  </div>
+
+ <script>
+    function toggleNav() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  
+  </script>
+
 </body>
 </html>

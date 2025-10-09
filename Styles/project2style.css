@@ -25,7 +25,6 @@ body {
   .container h1{
     display: flex;
     justify-content: center;
-    background-color: indianred;
     padding: 10px 0;
     border-radius: 6px;
 
@@ -46,7 +45,47 @@ body {
   justify-content: center;
 }
   
+  .topnav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  padding: 6px 0;
+  flex-wrap: nowrap;
+}
+
+/* Links inside the nav */
+.topnav a {
+  text-decoration: none;
   
+  padding: 8px 10px;
+  color: #222;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.topnav a:hover,
+.topnav a:focus {
+  background: rgba(0,0,0,0.05);
+  outline: none;
+}
+
+/* Brand aligns left */
+.topnav .brand {
+  font-weight: 700;
+  background-color: indianred;
+  margin-right: 8px;
+}
+
+/* The hamburger icon (hidden by default on wdie screens) */
+.topnav .icon {
+  display: none;
+  margin-left: auto; /* puts it on the right */
+  font-size: 20px;
+  padding: 6px 10px;
+}
+
+
   
   /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 900px) {
@@ -70,5 +109,41 @@ body {
   /* Banner turns blue at minimum */
   .container h1 {
     background-color: steelblue;
+  }
+
+   .topnav a:not(.brand):not(.icon) {
+    display: none;
+  }
+ 
+  /* show hamburger icon */
+  .topnav .icon {
+    display: block;
+  }
+
+  /* When the nav has .responsive, show links stacked vertically */
+  .topnav.responsive {
+    background-color: beige;
+    position: relative;
+    display: block;
+    padding: 8px 0;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* use the same specificity as the hide rule so it can override it  */
+  .topnav.responsive a:not(.brand):not(.icon) {
+    display: block;
+    text-align: left;
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
+  /* Slight visual separation from content */
+  .topnav.responsive + h1 {
+    margin-top: 48px;
   }
 }
