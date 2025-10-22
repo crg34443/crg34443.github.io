@@ -62,7 +62,7 @@ body {
   width: 180px;
 }
 .steps-list li + li {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .step-link {
   color: #111;
@@ -109,7 +109,7 @@ body {
 }
 .caption {
   margin: 12px 8px 0;
-  font-size: 12.5px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -117,7 +117,7 @@ body {
 .controls {
   display: flex;
   justify-content: center;
-  gap: 48px;
+  gap: 50px;
 }
 .pill {
   background: #d7e4ff;
