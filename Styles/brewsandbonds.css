@@ -1,0 +1,271 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Francois+One&family=Inter:wght@400;600&display=swap');
+
+/* General Reset - recommended by reddit */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make the page a vertical flex container */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content expands to fill remaining space */
+main {
+  flex: 1;
+}
+
+body {
+  background-color: #f5e9b0; 
+  color: #222;
+  font-family: 'Inria Serif', serif;
+  line-height: 1.6;
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background-color: #f5e9b0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d35400;
+}
+
+.navbar nav a {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #d35400;
+}
+
+/* HERO SECTION */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+/* DIMS HERO PHOTO*/
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.233);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-family: 'Francois One', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: 'Inria Serif', serif;
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d35400;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b34300;
+}
+
+/* CARD SECTION */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.pagebreak {
+background-color:#e0854083 ;
+height: 63px;             
+width: 100vw; 
+display: block;
+margin-bottom: 3rem;
+margin-left: calc(-50vw + 50%);
+}
+
+.card {
+  background-color: #f5e9b0;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-family: 'Inria Serif', serif;
+}
+
+/* SCHEDULE SECTION */
+.schedule {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.schedule h2 {
+  font-family: 'Inria Serif', serif;
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 1rem;
+}
+
+.schedule .note {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.schedule-text {
+  font-size: 1rem;
+  text-align: left;
+  max-width: 800px;
+  margin: auto 15rem;
+}
+
+/* MENU PAGE */
+.menu-sections {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu-sections section {
+  margin-bottom: 3rem;
+}
+
+.menu-sections h2 {
+  font-family: 'Inria Serif', serif;
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.menu-sections ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-sections li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ABOUT PAGE */
+.about-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.about-content h2 {
+  color: #d35400;
+  font-size: 2rem;
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #e7a26b;
+  background-image: url(/Images/Brewsnbonds/Orange_Paperstack.png);
+  color: #000;
+  padding: 1rem;
+  font-family: 'Inria Serif', serif;
+  font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 0.5rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
