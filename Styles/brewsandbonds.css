@@ -16,7 +16,7 @@ html, body {
   flex-direction: column;
 }
 
-/* Main content expands to fill remaining space */
+/* Main content expands to fill space */
 main {
   flex: 1;
 }
@@ -44,7 +44,7 @@ body {
 .logo {
   font-family: 'Inria Serif', serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 25px;
   color: #d35400;
 }
 
