@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/AuroraArt.css">
+    <title>Education | Aurora Art Museum</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="/Images/AuroraArt/AuroraArtLogo.svg" alt="Aurora Art Museum Logo">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="visit.html">Visit</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="tickets.html" class="buy-btn">Buy Tickets</a>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="visit.html">Visit</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+        <a href="tickets.html" class="buy-btn">Buy Tickets</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="/Images/AuroraArt/20230516-Barnimages-006.jpg" alt="Education Hero">
+    <div class="hero-text">
+        <h1>Education</h1>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section style="max-width: var(--max-width); margin: 70px auto; text-align: center;">
+    <h2 style="font-family: var(--text-font); font-size: 30px;">
+        We believe art education inspires<br>lifelong curiosity
+    </h2>
+</section>
+
+<section style="max-width: var(--max-width); margin: 40px auto; font-size: 18px;">
+    
+    <h3 style="font-weight: 700;">For Schools:</h3>
+    <ul style="margin: 10px 0 30px 20px;">
+        <li>Guided field trips with hands-on activities</li>
+        <li>Teacher resources and lesson plans</li>
+    </ul>
+
+    <h3 style="font-weight: 700;">For Adults:</h3>
+    <ul style="margin: 10px 0 30px 20px;">
+        <li>Studio workshops with practicing artists</li>
+        <li>Lecture series exploring art history and current trends</li>
+    </ul>
+
+    <h3 style="font-weight: 700;">For Families:</h3>
+    <ul style="margin: 10px 0 30px 20px;">
+        <li>Drop-in art making in the Creativity Lab</li>
+        <li>Seasonal family festivals</li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col footer-logo">
+            <img src="/Images/AuroraArt/AuroraArtLogo.svg">
+            <p>©2025 Aurora Art Museum | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Open Hours</h4>
+            <p>Monday / Tuesday: Closed</p>
+            <p>Wednesday: 10:00am – 7:00pm</p>
+            <p>Thursday: 10:00am – 5:00pm</p>
+            <p>Friday: 10:00am – 5:00pm</p>
+            <p>Saturday: 10:00am – 5:00pm</p>
+            <p>Sunday: 12:00pm – 5:00pm</p>
+        </div>
+
+        <div class="footer-col">
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="visit.html">Visit</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+            <a href="tickets.html">Buy Tickets</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

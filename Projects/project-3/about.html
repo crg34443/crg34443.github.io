@@ -37,5 +37,16 @@ Today, Brews & Bonds is more than a coffee shop. It’s a welcoming space where 
   <footer>
     Brews & Bonds | All Rights Reserved ©2025
   </footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+
 </body>
 </html>

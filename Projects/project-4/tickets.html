@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/AuroraArt.css">
+    <title>Admissions | Aurora Art Museum</title>
+
+<style>
+    /* PAGE-SPECIFIC STYLES */
+    .admissions-section {
+        max-width: 900px;
+        margin: 80px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .admissions-section h2 {
+        font-family: var(--text-font);
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: var(--teal);
+    }
+
+    .hours-list p {
+        font-size: 20px;
+        margin: 12px 0;
+    }
+
+    .hours-list p span {
+        font-weight: 700;
+    }
+
+    /* MEMBERSHIP LEVELS */
+    .membership-section {
+        max-width: 900px;
+        margin: 120px auto 80px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .membership-section h2 {
+        text-align: center;
+        font-family: var(--text-font);
+        font-size: 36px;
+        color: var(--teal);
+        margin-bottom: 40px;
+    }
+
+    .membership-item {
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    .membership-item span {
+        font-weight: 400;
+        font-size: 18px;
+        color: #333;
+    }
+
+    /* BENEFITS */
+    .benefits-section {
+        max-width: 900px;
+        margin: 120px auto;
+        padding: 0 20px;
+    }
+
+    .benefits-section h2 {
+        text-align: center;
+        font-family: var(--text-font);
+        font-size: 36px;
+        color: var(--teal);
+        margin-bottom: 40px;
+    }
+
+    .benefit-item {
+        margin-bottom: 35px;
+    }
+
+    .benefit-item b {
+        font-size: 20px;
+    }
+
+    .benefit-item p {
+        margin-top: 6px;
+        font-size: 16px;
+        color: #444;
+    }
+
+    /* CENTER BUTTON */
+    .center-btn {
+        text-align: center;
+        margin-top: 40px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="/Images/AuroraArt/AuroraArtLogo.svg" alt="Aurora Art Museum Logo">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="visit.html">Visit</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="tickets.html" class="buy-btn">Buy Tickets</a>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="visit.html">Visit</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+        <a href="tickets.html" class="buy-btn">Buy Tickets</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-fixed">
+    <img src="/Images/AuroraArt/2016-11-21-roman-drits-barnimages-003.jpg" alt="Admissions Image">
+    <div class="hero-text">
+        <h1>Admissions</h1>
+    </div>
+</section>
+
+<!-- HOURS -->
+<section class="admissions-section">
+    <h2>Hours:</h2>
+
+    <div class="hours-list">
+        <p><span>Wednesday:</span> 10 AM – 7 PM</p>
+        <p><span>Thursday–Sunday:</span> 10 AM – 5 PM</p>
+        <p><strong>Closed Monday & Tuesday</strong></p>
+    </div>
+</section>
+
+<!-- MEMBERSHIP LEVELS -->
+<section class="membership-section">
+    <h2>Membership Levels:</h2>
+
+    <p class="membership-item">Individual – <span>$60/year</span></p>
+    <p class="membership-item">Dual/Family – <span>$100/year</span></p>
+    <p class="membership-item">Patron – <span>$250/year</span></p>
+    <p class="membership-item">Benefactor – <span>$500/year</span></p>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+    <h2>Benefits Include:</h2>
+
+    <div class="benefit-item">
+        <b>Free unlimited admission:</b>
+        <p>Perfect for visitors who want to explore at their own pace!</p>
+    </div>
+
+    <div class="benefit-item">
+        <b>Invitations to members-only previews:</b>
+        <p>See it before anyone else!</p>
+    </div>
+
+    <div class="benefit-item">
+        <b>Discounts at the gift shop and café:</b>
+        <p>Save money on refreshments and gifts!</p>
+    </div>
+
+    <div class="benefit-item">
+        <b>Exclusive access to travel opportunities with museum curators:</b>
+        <p>Learn first hand from our trained curators!</p>
+    </div>
+
+    <div class="center-btn">
+        <a href="#" class="buy-btn" style="padding: 12px 28px; font-size: 18px;">Buy Tickets</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col footer-logo">
+            <img src="/Images/AuroraArt/AuroraArtLogo.svg">
+            <p>©2025 Aurora Art Museum | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Open Hours</h4>
+            <p>Monday / Tuesday: Closed</p>
+            <p>Wednesday: 10:00am – 7:00pm</p>
+            <p>Thursday: 10:00am – 5:00pm</p>
+            <p>Friday: 10:00am – 5:00pm</p>
+            <p>Saturday: 10:00am – 5:00pm</p>
+            <p>Sunday: 12:00pm – 5:00pm</p>
+        </div>
+
+        <div class="footer-col">
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="visit.html">Visit</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+            <a href="tickets.html">Buy Tickets</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
